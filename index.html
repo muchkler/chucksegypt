@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <title>Chuck's Egypt</title>
+</head>
+
+<body>
+    
+<div class="firstpage">
+    
+    <div class="logo"><img src="images/chucks.png" width="100px" height="100px"></div>
+    
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    
+
+        <div class="maincontent">
+            <h1>Chuck's American Restaurant</h1>
+            <p class="mainp">Egypt's first authentic American cuisine.</p>
+            <div class="button"><a href="#secondpage">About Us</a></div>
+        </div>
+</div>
+  
+    
+<div class="secondpage" id="secondpage">
+    <div class="images">
+        <div class="firstdiv">
+            <img src="images/b1.png" width="100px">
+            <h2>We accept all types of payments.</h2>
+            <p class="bank">For your convenience, we offer many types of payment services, be it Paypal, Visa, or Cash. Just ask one of our waiters wtype of payment we accept and they'll be sure to help you!</p>
+        </div>
+        
+        <div class="seconddiv">
+            <img src="images/b2.png" width="100px">
+            <h2>Cooked with love.</h2>
+            <p class="heart">Our chiefs have been picked with the highest standards. Your food is cooked to match the authentic, American taste that wlove. </p>
+        </div>
+        <div class="thirddiv">
+            <img src="images/b3.png" width="100px">
+            <h2>Accessible location.</h2>
+            <p class="location">Parking is a hassle in Alexandria. We're located in Smouha, next to Dina farms. We believe there are plenty of spots parking ready for you!</p>
+        </div>
+    </div>
+</div>
+
+<div class="thirdpage" id="thirdpage">
+    <div class="contactinfo">
+    <h3>If you have any enquiries regarding our menus, whether or not we have any job openings, you can find our contact details below!</h3>
+    <img src="images/Asset%2060.png" width="150px" class="contactphone">
+    </div>
+        <div class="contactinfoicons">
+            <div class="phonediv">
+                <div class="phonecontact"><a href="https://www.facebook.com/Chucksegypt/?ref=br_rs"><img src="images/b4.png" width="30px"   class="fblogo"><p class="number">01159150145</p></a>
+            </div>    
+            <div class="locationdiv">    
+                <div class="locationcontact"><a href="https://www.facebook.com/Chucksegypt/?ref=br_rs"><img src="images/b5.png" width="30px" class="fblogo"><p class="smouha">Smouha, Next to Dina Farms</p></a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+    
+
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>  
+<script>
+// Changing the defaults
+window.sr = ScrollReveal({ reset: true });
+
+// Customizing a reveal set
+sr.reveal('.images, .contactphone, h3, .contactinfoicons', {duration:3000, origin:'top', distance: '20px'});   
+    
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>    
+    
+</body>
+</html>
